@@ -3,13 +3,32 @@ import Layout from '../layouts/Layout.astro';
 import YouTubeEmbed from '../components/YouTubeEmbed.astro';
 ---
 
-<Layout title="Se Tú">
+<Layout title="Se Tú - Tu esencia. Tu propósito.">
 	<main>
-		<section class="video-section">
+		<section class="hero-section">
+			<h1>Se Tú</h1>
+			<p class="tagline">Tu esencia. Tu propósito.</p>
+		</section>
+		
+		<section class="video-section" aria-label="Video principal">
+			<h2>Descubre Quién Dice Dios Que Soy</h2>
+			<p class="intro-text">
+				Explora nuestros podcasts donde profundizamos en temas bíblicos y explicamos las promesas de Dios. 
+				Un espacio para aprender más sobre tu identidad en Cristo y tu propósito divino.
+			</p>
 			<YouTubeEmbed 
 				videoId="loMaynmaMqE" 
-				title="Video de Se Tú"
+				title="¿Qué dice que soy? - Podcast Se Tú"
 			/>
+		</section>
+		
+		<section class="about-section">
+			<h2>Sobre Se Tú</h2>
+			<p>
+				Se Tú es un ministerio dedicado a ayudarte a descubrir tu verdadera identidad en Cristo. 
+				A través de enseñanzas bíblicas profundas y reflexiones inspiradoras, te guiamos en un viaje 
+				de autodescubrimiento espiritual basado en las promesas de Dios.
+			</p>
 		</section>
 	</main>
 </Layout>
@@ -23,25 +42,77 @@ import YouTubeEmbed from '../components/YouTubeEmbed.astro';
 		color: white;
 		text-align: center;
 		display: flex;
+		flex-direction: column;
 		align-items: center;
-		justify-content: center;
+		gap: 3rem;
+	}
+	
+	.hero-section {
+		padding: 2rem 1rem 1rem;
+	}
+	
+	.hero-section h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		margin: 0 0 0.5rem 0;
+		color: #ffffff;
+	}
+	
+	.tagline {
+		font-size: 1.2rem;
+		color: #d4af37;
+		font-weight: 300;
+		margin: 0;
 	}
 	
 	.video-section {
 		width: 60%;
-		padding: 2rem;
+		padding: 0 2rem;
 	}
 	
 	.video-section h2 {
 		font-size: 2rem;
-		margin-bottom: 1.5rem;
+		margin-bottom: 1rem;
 		color: white;
 	}
 	
-	.video-section p {
-		margin-top: 1.5rem;
+	.intro-text {
+		margin: 0 0 2rem 0;
 		font-size: 1.1rem;
 		line-height: 1.8;
 		color: #e0e0e0;
+	}
+	
+	.about-section {
+		width: 60%;
+		padding: 2rem;
+		background: rgba(255, 255, 255, 0.05);
+		border-radius: 12px;
+		margin-bottom: 3rem;
+	}
+	
+	.about-section h2 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+		color: #d4af37;
+	}
+	
+	.about-section p {
+		font-size: 1.1rem;
+		line-height: 1.8;
+		color: #e0e0e0;
+		margin: 0;
+	}
+	
+	@media (max-width: 768px) {
+		.video-section,
+		.about-section {
+			width: 90%;
+			padding: 1rem;
+		}
+		
+		.hero-section h1 {
+			font-size: 2rem;
+		}
 	}
 </style>

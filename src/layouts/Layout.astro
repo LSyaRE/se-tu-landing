@@ -14,9 +14,53 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Un espacio para aprender mas de Dios y sus promesas. En los podcasts se profundizaran temas bíblicos y se explicaran las promesas de Dios." />
 		<meta name="viewport" content="width=device-width" />
+		<meta name="keywords" content="Se Tú, podcast cristiano, temas bíblicos, promesas de Dios, fe, cristianismo, enseñanza bíblica, espiritualidad" />
+		<meta name="author" content="Se Tú" />
+		<meta name="robots" content="index, follow" />
+		<link rel="canonical" href="https://setu.com/" />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://setu.com/" />
+		<meta property="og:title" content="Se Tú - Tu esencia. Tu propósito." />
+		<meta property="og:description" content="Un espacio para aprender mas de Dios y sus promesas. En los podcasts se profundizaran temas bíblicos y se explicaran las promesas de Dios." />
+		<meta property="og:image" content="https://setu.com/logo.jpeg" />
+		<meta property="og:locale" content="es_ES" />
+		<meta property="og:site_name" content="Se Tú" />
+		
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:url" content="https://setu.com/" />
+		<meta name="twitter:title" content="Se Tú - Tu esencia. Tu propósito." />
+		<meta name="twitter:description" content="Un espacio para aprender mas de Dios y sus promesas. En los podcasts se profundizaran temas bíblicos y se explicaran las promesas de Dios." />
+		<meta name="twitter:image" content="https://setu.com/logo.jpeg" />
+		
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		
+		<!-- Schema.org structured data -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"name": "Se Tú",
+			"description": "Un espacio para aprender mas de Dios y sus promesas. En los podcasts se profundizaran temas bíblicos y se explicaran las promesas de Dios.",
+			"url": "https://setu.com/",
+			"logo": "https://setu.com/logo.jpeg",
+			"sameAs": []
+		}
+		</script>
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebSite",
+			"name": "Se Tú",
+			"url": "https://setu.com/",
+			"description": "Un espacio para aprender mas de Dios y sus promesas. En los podcasts se profundizaran temas bíblicos y se explicaran las promesas de Dios.",
+			"inLanguage": "es"
+		}
+		</script>
 	</head>
 	<body>
 		<Header />
