@@ -1,16 +1,47 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
+import YouTubeEmbed from '../components/YouTubeEmbed.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Se Tú">
+	<main>
+		<section class="video-section">
+			<YouTubeEmbed 
+				videoId="loMaynmaMqE" 
+				title="Video de Se Tú"
+			/>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: 0 auto;
+		padding: 0;
+		width: 100%;
+		max-width: 100%;
+		color: white;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.video-section {
+		width: 60%;
+		padding: 2rem;
+	}
+	
+	.video-section h2 {
+		font-size: 2rem;
+		margin-bottom: 1.5rem;
+		color: white;
+	}
+	
+	.video-section p {
+		margin-top: 1.5rem;
+		font-size: 1.1rem;
+		line-height: 1.8;
+		color: #e0e0e0;
+	}
+</style>
