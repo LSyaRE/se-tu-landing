@@ -1,5 +1,5 @@
 ---
-import Header from '../components/Header.astro';
+import Header from "../components/Header.astro";
 
 interface Props {
 	title: string;
@@ -12,54 +12,75 @@ const { title } = Astro.props;
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Un espacio para aprender mas de Dios y sus promesas. En los podcasts se profundizaran temas bíblicos y se explicaran las promesas de Dios." />
+		<meta
+			name="description"
+			content="Se Tú - Descubre tu verdadera identidad en Cristo. Podcast cristiano con enseñanzas bíblicas profundas sobre las promesas de Dios, fe, y propósito divino. Un espacio para aprender sin máscaras, con transparencia y verdad."
+		/>
 		<meta name="viewport" content="width=device-width" />
-		<meta name="keywords" content="Se Tú, podcast cristiano, temas bíblicos, promesas de Dios, fe, cristianismo, enseñanza bíblica, espiritualidad" />
+		<meta
+			name="keywords"
+			content="Se Tú, podcast cristiano, temas bíblicos, promesas de Dios, fe, cristianismo, enseñanza bíblica, espiritualidad"
+		/>
 		<meta name="author" content="Se Tú" />
 		<meta name="robots" content="index, follow" />
 		<link rel="canonical" href="https://setuofficial.com/" />
-		
+
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://setuofficial.com/" />
 		<meta property="og:title" content="Se Tú - Tu esencia. Tu propósito." />
-		<meta property="og:description" content="Un espacio para aprender mas de Dios y sus promesas. En los podcasts se profundizaran temas bíblicos y se explicaran las promesas de Dios." />
-		<meta property="og:image" content="https://setuofficial.com/logo.jpeg" />
+		<meta
+			property="og:description"
+			content="Descubre tu verdadera identidad en Cristo. Podcast cristiano con enseñanzas bíblicas profundas sobre las promesas de Dios, fe, y propósito divino. Un espacio para ser real, ser transformado y dejar que Dios sea Dios."
+		/>
+		<meta
+			property="og:image"
+			content="https://setuofficial.com/logo.jpeg"
+		/>
 		<meta property="og:locale" content="es_ES" />
 		<meta property="og:site_name" content="Se Tú" />
-		
+
 		<!-- Twitter -->
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:url" content="https://setuofficial.com/" />
-		<meta name="twitter:title" content="Se Tú - Tu esencia. Tu propósito." />
-		<meta name="twitter:description" content="Un espacio para aprender mas de Dios y sus promesas. En los podcasts se profundizaran temas bíblicos y se explicaran las promesas de Dios." />
-		<meta name="twitter:image" content="https://setuofficial.com/logo.jpeg" />
-		
+		<meta
+			name="twitter:title"
+			content="Se Tú - Tu esencia. Tu propósito."
+		/>
+		<meta
+			name="twitter:description"
+			content="Descubre tu verdadera identidad en Cristo. Podcast cristiano con enseñanzas bíblicas profundas sobre las promesas de Dios, fe, y propósito divino."
+		/>
+		<meta
+			name="twitter:image"
+			content="https://setuofficial.com/logo.jpeg"
+		/>
+
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
-		
+
 		<!-- Schema.org structured data -->
 		<script type="application/ld+json">
-		{
-			"@context": "https://schema.org",
-			"@type": "Organization",
-			"name": "Se Tú",
-			"description": "Un espacio para aprender mas de Dios y sus promesas. En los podcasts se profundizaran temas bíblicos y se explicaran las promesas de Dios.",
-			"url": "https://setuofficial.com/",
-			"logo": "https://setuofficial.com/logo.jpeg",
-			"sameAs": []
-		}
+			{
+				"@context": "https://schema.org",
+				"@type": "Organization",
+				"name": "Se Tú",
+				"description": "Se Tú es un ministerio cristiano dedicado a ayudarte a descubrir tu verdadera identidad en Cristo. A través de podcasts con enseñanzas bíblicas profundas y reflexiones inspiradoras, te guiamos en un viaje de autodescubrimiento espiritual basado en las promesas de Dios. Un espacio para ser real, ser transformado y dejar que Dios sea Dios, sin máscaras ni apariencias.",
+				"url": "https://setuofficial.com/",
+				"logo": "https://setuofficial.com/logo.jpeg",
+				"sameAs": []
+			}
 		</script>
 		<script type="application/ld+json">
-		{
-			"@context": "https://schema.org",
-			"@type": "WebSite",
-			"name": "Se Tú",
-			"url": "https://setuofficial.com/",
-			"description": "Un espacio para aprender mas de Dios y sus promesas. En los podcasts se profundizaran temas bíblicos y se explicaran las promesas de Dios.",
-			"inLanguage": "es"
-		}
+			{
+				"@context": "https://schema.org",
+				"@type": "WebSite",
+				"name": "Se Tú",
+				"url": "https://setuofficial.com/",
+				"description": "Descubre tu verdadera identidad en Cristo. Podcast cristiano con enseñanzas bíblicas profundas sobre las promesas de Dios, fe, y propósito divino. Un espacio para aprender más sobre tu identidad en Cristo sin máscaras, con transparencia y verdad.",
+				"inLanguage": "es"
+			}
 		</script>
 	</head>
 	<body>
