@@ -1,31 +1,115 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import YouTubeEmbed from '../components/YouTubeEmbed.astro';
+import Layout from "../layouts/Layout.astro";
+import YouTubeEmbed from "../components/YouTubeEmbed.astro";
 ---
 
 <Layout title="Se Tú - Tu esencia. Tu propósito.">
 	<main>
-
-		
 		<section class="video-section" aria-label="Video principal">
 			<h2>Descubre Quién Dice Dios Que Soy</h2>
 			<p class="intro-text">
-				Explora nuestros podcasts donde profundizamos en temas bíblicos y explicamos las promesas de Dios. 
-				Un espacio para aprender más sobre tu identidad en Cristo y tu propósito divino.
+				Explora nuestros podcasts donde profundizamos en temas bíblicos
+				y explicamos las promesas de Dios. Un espacio para aprender más
+				sobre tu identidad en Cristo y tu propósito divino.
 			</p>
-			<YouTubeEmbed 
-				videoId="loMaynmaMqE" 
+			<YouTubeEmbed
+				videoId="loMaynmaMqE"
 				title="¿Qué dice que soy? - Podcast Se Tú"
 			/>
 		</section>
-		
+
 		<section class="about-section">
 			<h2>Sobre Se Tú</h2>
-			<p>
-				Se Tú es un ministerio dedicado a ayudarte a descubrir tu verdadera identidad en Cristo. 
-				A través de enseñanzas bíblicas profundas y reflexiones inspiradoras, te guiamos en un viaje 
-				de autodescubrimiento espiritual basado en las promesas de Dios.
-			</p>
+			<div class="se-tu-container">
+				<h2 class="se-tu-title">Sé Tú</h2>
+
+				<p class="se-tu-intro">
+					<strong
+						>“Sé Tú” nace como una oración, pero crece como un
+						llamado.</strong
+					><br />
+					Lo que comenzó como una expresión íntima del corazón se transformó
+					en un proyecto vivo, cuyo propósito es compartir experiencias
+					reales y, sobre todo, la presencia auténtica de Dios en nuestras
+					vidas.
+				</p>
+
+				<p class="se-tu-text">
+					Este espacio invita a acercarse a Dios <strong
+						>sin máscaras, sin apariencias y sin mentiras</strong
+					>, con un corazón transparente, dispuesto a ser
+					transformado. Aquí no se trata de construir una imagen, sino
+					de permitir que Él se manifieste plenamente en nosotros.
+				</p>
+
+				<p class="se-tu-text">
+					Como relata Mauro, la visión inicial era un proyecto físico,
+					tangible, visible. Pero Dios redirigió el proceso hacia algo
+					mucho más profundo: una dimensión espiritual donde
+					<strong>Él no es un complemento, sino el centro</strong>, no
+					un añadido, sino el fundamento.
+				</p>
+
+				<div class="se-tu-goals">
+					<p><strong>El objetivo es claro y firme:</strong></p>
+					<ul>
+						<li>Que Dios sea conocido.</li>
+						<li>Que Su Palabra sea difundida.</li>
+						<li>
+							Que Su verdad esté por encima de cualquier historia
+							personal.
+						</li>
+					</ul>
+				</div>
+
+				<p class="se-tu-text">
+					“Sé Tú” no existe para exaltar experiencias humanas, sino
+					para glorificar a Dios. Es un canal creado para Su gloria,
+					un espacio de formación, sinceridad y aprendizaje, donde
+					todo se construye <strong>con Biblia en mano</strong>,
+					guiados por la Escritura y no por interpretaciones cómodas o
+					convenientes.
+				</p>
+
+				<div class="se-tu-manifest">
+					<p>
+						No se predica perfección. <strong
+							>Se vive proceso.</strong
+						>
+					</p>
+					<p>
+						No se vende una imagen. <strong
+							>Se camina en verdad.</strong
+						>
+					</p>
+					<p>
+						No se busca protagonismo. <strong
+							>Se busca presencia.</strong
+						>
+					</p>
+				</div>
+
+				<div class="se-tu-invitation">
+					<p><strong>Sé Tú no es una marca.</strong></p>
+					<p><strong>No es un concepto.</strong></p>
+					<p><strong>No es un proyecto.</strong></p>
+
+					<p class="se-tu-invite-title">
+						<strong>Es una invitación:</strong>
+					</p>
+					<ul>
+						<li>A ser reales.</li>
+						<li>A ser transformados.</li>
+						<li>A dejar que Dios sea Dios.</li>
+					</ul>
+
+					<p class="se-tu-closing">
+						Y a permitir que Él haga Su obra —<strong
+							>sin filtros, sin máscaras y sin intermediarios.</strong
+						>
+					</p>
+				</div>
+			</div>
 		</section>
 	</main>
 </Layout>
@@ -43,43 +127,43 @@ import YouTubeEmbed from '../components/YouTubeEmbed.astro';
 		align-items: center;
 		gap: 3rem;
 	}
-	
+
 	.hero-section {
 		padding: 2rem 1rem 1rem;
 	}
-	
+
 	.hero-section h1 {
 		font-size: 3rem;
 		font-weight: 700;
 		margin: 0 0 0.5rem 0;
 		color: #ffffff;
 	}
-	
+
 	.tagline {
 		font-size: 1.2rem;
 		color: #d4af37;
 		font-weight: 300;
 		margin: 0;
 	}
-	
+
 	.video-section {
 		width: 60%;
 		padding: 0 2rem;
 	}
-	
+
 	.video-section h2 {
 		font-size: 2rem;
 		margin-bottom: 1rem;
 		color: white;
 	}
-	
+
 	.intro-text {
 		margin: 0 0 2rem 0;
 		font-size: 1.1rem;
 		line-height: 1.8;
 		color: #e0e0e0;
 	}
-	
+
 	.about-section {
 		width: 60%;
 		padding: 2rem;
@@ -87,27 +171,27 @@ import YouTubeEmbed from '../components/YouTubeEmbed.astro';
 		border-radius: 12px;
 		margin-bottom: 3rem;
 	}
-	
+
 	.about-section h2 {
 		font-size: 2rem;
 		margin-bottom: 1rem;
 		color: #d4af37;
 	}
-	
+
 	.about-section p {
 		font-size: 1.1rem;
 		line-height: 1.8;
 		color: #e0e0e0;
 		margin: 0;
 	}
-	
+
 	@media (max-width: 768px) {
 		.video-section,
 		.about-section {
 			width: 90%;
 			padding: 1rem;
 		}
-		
+
 		.hero-section h1 {
 			font-size: 2rem;
 		}
